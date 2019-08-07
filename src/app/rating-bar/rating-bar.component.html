@@ -1,4 +1,26 @@
 <div>
-  <span [ngClass]="{'hover': !readonly}" class="material-icons" *ngFor="let item of ratings" [ngStyle]="{'color': getRatingColor(item), 'font-size': size}"
-        (click)="rate(item)">{{getIcon(item)}}</span>
+  <span *ngFor="let item of ratings" (click)="rate(item)" [ngClass]="{'hover': !readonly}">
+    <svg *ngIf="getIcon(item) === 'star'" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <path d="M0 0h24v24H0z" fill="none" />
+      <path [attr.fill]="getRatingColor(item)"
+            d="M12 17.3l6.2 3.7-1.7-7L22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2 7.5 14l-1.7 7z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </svg>
+    <svg *ngIf="getIcon(item) === 'star_border'" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+      <path [attr.fill]="getRatingColor(item)"
+            d="M22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2 7.5 14l-1.7 7 6.2-3.7 6.2 3.7-1.6-7L22 9.2zm-10 6.2l-3.8 2.3 1-4.3L6 10.5l4.4-.4 1.7-4 1.7 4 4.4.4-3.3 2.9 1 4.3-3.8-2.3z" />
+      <path d="M0 0h24v24H0z" fill="none" />
+    </svg>
+    <svg *ngIf="getIcon(item) === 'star_half'" xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24">
+      <defs>
+        <path id="a" d="M0 0h24v24H0V0z" />
+      </defs>
+      <clipPath id="b">
+        <use xlink:href="#a" overflow="visible" />
+      </clipPath>
+      <path [attr.fill]="getRatingColor(item)" clip-path="url(#b)"
+            d="M22 9.2l-7.2-.6L12 2 9.2 8.6 2 9.2 7.5 14l-1.7 7 6.2-3.7 6.2 3.7-1.6-7L22 9.2zm-10 6.2V6.1l1.7 4 4.4.4-3.3 2.9 1 4.3-3.8-2.3z" />
+    </svg>
+  </span>
 </div>

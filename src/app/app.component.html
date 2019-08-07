@@ -5,15 +5,14 @@
   <section class="showcase">
     <div>
       <h2>3.5</h2>
-      <app-rating-bar [total]="5" [size]="'30px'" [rating]="3.5" [type]="'hollow'" [readonly]="true"
-                      (rated)="getRating($event)">
+      <app-rating-bar [total]="5" [rating]="3.5" [type]="'hollow'" [readonly]="true" (rated)="getRating($event)">
       </app-rating-bar>
       <p>Display Only</p>
     </div>
     <div>
       <h2>{{rating}}</h2>
-      <app-rating-bar [total]="5" [size]="'30px'" [filledColor]="'#FFDD03'" [rating]="rating" [type]="'filled'"
-                      [readonly]="false" (rated)="getRating($event)">
+      <app-rating-bar [total]="5" [filledColor]="'#FFDD03'" [rating]="rating" [type]="'filled'" [readonly]="false"
+                      (rated)="getRating($event)">
       </app-rating-bar>
       <p>Interactive</p>
     </div>

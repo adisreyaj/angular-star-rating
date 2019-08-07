@@ -9,7 +9,6 @@ export class RatingBarComponent implements OnInit {
   @Input() total = 5;
   @Input() rating = 0;
   @Input() readonly = false;
-  @Input() size = '24px';
   @Input() type: 'filled' | 'hollow' = 'hollow';
   @Input() filledColor = '#3db700';
   @Input() emptyColor = '#e0e0e0';

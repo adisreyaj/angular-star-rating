@@ -1,16 +1,18 @@
-# Ratings
+# SVG Based Angular Star Rating Component
 
 Simple Rating Component for your next Angular Project. Very simple to setup and use and comes with a lot of customizations.
+
+![User Ratings Card](https://raw.githubusercontent.com/adisreyaj/angular-star-rating/master/src/assets/rating.png)
 
 ### Features
 
 - Simple and Easy to Setup
 - Ease to use
-- Dependency on only the icons
+- SVG based super light
+- Material Spec Icons for Standard Feel
+- Zero Dependencies
 - Supports **half-star** rating
 - Supports Rating Mode and also Display only Mode
-
-![User Ratings Card](https://raw.githubusercontent.com/adisreyaj/angular-star-rating/master/src/assets/rating.png)
 
 ## How to Use the Component
 
@@ -43,11 +45,7 @@ export class AppModule {}
 Eg with few options:
 
 ```html
-<ngx-star-rating
-  [total]="5"
-  [filledColor]="'#ff0000'"
-  [size]="'30px'"
-></ngx-star-rating>
+<ngx-star-rating [total]="5" [filledColor]="'#ff0000'"></ngx-star-rating>
 ```
 
 ## Customizations
@@ -56,7 +54,6 @@ Eg with few options:
 | ------------- | ------------------------------------------------------------ | ----------- | ---------------- | ------- |
 | No of Stars   | You can change the total rating number                       | total       | number           | 5       |
 | Display Mode  | Star Rating component can be used to just display the rating | readonly    | boolean          | false   |
-| Size of Stars | The size of the stars displayed can be changed to your needs | size        | string           | 24px    |
 | Type of Stars | The component supports filled stars and hollow stars design  | type        | filled or hollow | hollow  |
 | Rating Color  | The color for the filled Stars                               | filledColor | string           | #3db700 |
 | Rating Color  | The color for the empty Stars                                | emptyColor  | string           | #e0e0e0 |
