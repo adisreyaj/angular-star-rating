@@ -68,6 +68,7 @@
   .card{
     height: 400px;
     max-width: 500px;
+    min-width: unset;
     flex-direction: column;
     width: 90%;
     .meta-info{
