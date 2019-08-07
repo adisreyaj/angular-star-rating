@@ -1,0 +1,4 @@
+<div>
+  <span [ngClass]="{'hover': !readonly}" class="material-icons" *ngFor="let item of ratings"
+        [ngStyle]="{'color': getRatingColor(item), 'font-size': size}" (click)="rate(item)">{{getIcon(item)}}</span>
+</div>
