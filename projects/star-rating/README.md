@@ -14,14 +14,41 @@ Simple Rating Component for your next Angular Project. Very simple to setup and 
 
 ## How to Use the Component
 
-The component uses material icons and there are no other dependencies.
+#### Install the package using the command:
 
-`npm i material-icons`
+```
+npm i @sreyaj/ng-star-rating
+```
 
-1. Create a component in your project.
-1. Copy and paste the rating bar component codes into your newly created component
+#### Import the StarRatingModule into your module
 
-You can now start using it in any component of your project.
+```ts
+import { StarRatingModule } from '@sreyaj/ng-star-rating';
+@NgModule({
+  ...
+  imports: [StarRatingModule],
+  ...
+})
+export class AppModule {}
+```
+
+#### Now you can use the component inside your application
+
+```html
+<ngx-star-rating></ngx-star-rating>
+```
+
+#### You can now customize it with the following attributes
+
+Eg with few options:
+
+```html
+<ngx-star-rating
+  [total]="5"
+  [filledColor]="'#ff0000'"
+  [size]="'30px'"
+></ngx-star-rating>
+```
 
 ## Customizations
 
@@ -34,3 +61,5 @@ You can now start using it in any component of your project.
 | Rating Color  | The color for the filled Stars                               | filledColor | string           | #3db700 |
 | Rating Color  | The color for the empty Stars                                | emptyColor  | string           | #e0e0e0 |
 | Rating Event  | Rating Emitted when user clicks on the rating                | rated       | number           | nil     |
+
+Feel free to open Issues and Pull Requests
