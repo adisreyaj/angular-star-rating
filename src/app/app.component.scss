@@ -31,5 +31,11 @@ main{
 @media screen and (max-width: 600px){
   main{
     padding: 8px;
+    .showcase{
+        flex-direction: column;
+        div{
+          margin-bottom: 16px;
+        }
+    }
   }
 }
