@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { RatingBarComponent } from './rating-bar/rating-bar.component';
 import { UserRatingComponent } from './cards/user-rating/user-rating.component';
 import { FoodRatingComponent } from './cards/food-rating/food-rating.component';
-
+import { StarRatingModule } from 'star-rating';
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,11 +14,8 @@ import { FoodRatingComponent } from './cards/food-rating/food-rating.component';
     UserRatingComponent,
     FoodRatingComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, StarRatingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

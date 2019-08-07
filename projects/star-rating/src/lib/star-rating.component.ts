@@ -1,14 +1,15 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-rating-bar',
-  templateUrl: './rating-bar.component.html',
-  styleUrls: ['./rating-bar.component.scss']
+  selector: 'ngx-star-rating',
+  templateUrl: './star-rating.component.html',
+  styleUrls: ['./star-rating.component.scss']
 })
-export class RatingBarComponent implements OnInit {
+export class StarRatingComponent implements OnInit {
   @Input() total = 5;
   @Input() rating = 0;
   @Input() readonly = false;
+  @Input() size = '24px';
   @Input() type: 'filled' | 'hollow' = 'hollow';
   @Input() filledColor = '#3db700';
   @Input() emptyColor = '#e0e0e0';

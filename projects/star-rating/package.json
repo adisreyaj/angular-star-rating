@@ -1,0 +1,25 @@
+{
+  "name": "@sreyaj/ng-star-rating",
+  "version": "2.0.0",
+  "author": {
+    "name": "Adithya Sreyaj",
+    "email": "adi.sreyaj@gmail.com",
+    "url": "https://sreyaj.com"
+  },
+  "description": "A Simple and Customizable SVG based Star Rating Component For Angular",
+  "keywords": [
+    "angular",
+    "star rating",
+    "rating",
+    "user rating"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adisreyaj/angular-star-rating/issues"
+  },
+  "homepage": "https://github.com/adisreyaj/angular-star-rating/",
+  "peerDependencies": {
+    "@angular/common": "^8.1.3",
+    "@angular/core": "^8.1.3"
+  }
+}
