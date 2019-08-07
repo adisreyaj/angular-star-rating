@@ -1,13 +1,19 @@
 {
   "name": "ratings",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "adi.sreyaj@gmail.com",
+    "name": "Adithya Sreyaj",
+    "url": "https://sreyaj.com"
   },
   "private": true,
   "dependencies": {
@@ -19,6 +25,7 @@
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "material-icons": "^0.3.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"

@@ -1,27 +1,36 @@
 # Ratings
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
+Simple Rating Component for your next Angular Project. Very simple to setup and use and comes with a lot of customizations.
 
-## Development server
+### Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Simple and Easy to Setup
+- Ease to use
+- Dependency on only the icons
+- Supports **half-star** rating
+- Supports Rating Mode and also Display only Mode
 
-## Code scaffolding
+![User Ratings Card](src\assets\rating.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## How to Use the Component
 
-## Build
+The component uses material icons and there are no other dependencies.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`npm i material-icons`
 
-## Running unit tests
+1. Create a component in your project.
+1. Copy and paste the rating bar component codes into your newly created component
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You can now start using it in any component of your project.
 
-## Running end-to-end tests
+## Customizations
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+| Feature       | Description                                                  | Attribute   | Type             | Default |
+| ------------- | ------------------------------------------------------------ | ----------- | ---------------- | ------- |
+| No of Stars   | You can change the total rating number                       | total       | number           | 5       |
+| Display Mode  | Star Rating component can be used to just display the rating | readonly    | boolean          | false   |
+| Size of Stars | The size of the stars displayed can be changed to your needs | size        | string           | 24px    |
+| Type of Stars | The component supports filled stars and hollow stars design  | type        | filled or hollow | hollow  |
+| Rating Color  | The color for the filled Stars                               | filledColor | string           | #3db700 |
+| Rating Color  | The color for the empty Stars                                | emptyColor  | string           | #e0e0e0 |
+| Rating Event  | Rating Emitted when user clicks on the rating                | rated       | number           | nil     |
