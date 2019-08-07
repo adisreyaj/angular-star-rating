@@ -10,7 +10,7 @@ Simple Rating Component for your next Angular Project. Very simple to setup and 
 - Supports **half-star** rating
 - Supports Rating Mode and also Display only Mode
 
-![User Ratings Card](src\assets\rating.png)
+![User Ratings Card](https://raw.githubusercontent.com/adisreyaj/angular-star-rating/master/src/assets/rating.png)
 
 ## How to Use the Component
 
