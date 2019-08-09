@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "build:lib": "ng build star-rating",
-    "test:lib": "ng test star-rating --code-coverage --watch=false"
+    "test:lib": "ng test star-rating --code-coverage --watch=false --browsers=ChromeHeadless"
   },
   "license": "MIT",
   "author": {
