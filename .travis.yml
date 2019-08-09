@@ -1,0 +1,35 @@
+# General settings
+dist: trusty
+sudo: false
+language: node_js
+node_js:
+  - 'lts/*'
+cache: false
+notifications:
+  email: false
+
+branches:
+  only:
+    - master
+    - development
+
+# Build stages
+stages:
+  - name: test
+  - name: build
+# Build jobs
+jobs:
+  include:
+    - stage: test
+      before_install:
+        - npm install -g npm
+      install:
+        - npm i
+      script:
+        - npm run test:lib
+
+    - stage: build
+      install:
+        - npm i
+      script:
+        - npm run build:lib
