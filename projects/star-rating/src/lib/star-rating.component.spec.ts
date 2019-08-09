@@ -62,4 +62,11 @@ describe('StarRatingComponent', () => {
     icon = component.getIcon(3);
     expect(icon).toBe('star_half');
   });
+
+  it('clicking on stars should emit the current star value', () => {
+    component.readonly = false;
+    spyOn(component.rated, 'emit');
+    component.rate(3);
+    expect(component.rated.emit).toHaveBeenCalledWith(3);
+  });
 });
