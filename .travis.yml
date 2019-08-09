@@ -4,8 +4,6 @@ sudo: false
 language: node_js
 node_js:
   - 'lts/*'
-scripts:
-  - npm install codecov -g
 cache: false
 notifications:
   email: false
@@ -25,6 +23,7 @@ jobs:
     - stage: test
       before_install:
         - npm install -g npm
+        - npm install codecov -g
       install:
         - npm i
       script:
