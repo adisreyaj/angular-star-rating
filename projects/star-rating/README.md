@@ -1,5 +1,7 @@
 # SVG Based Angular Star Rating Component
 
+[![Build Status](https://travis-ci.org/adisreyaj/angular-star-rating.svg?branch=master)](https://travis-ci.org/adisreyaj/angular-star-rating) [![codecov](https://codecov.io/gh/adisreyaj/angular-star-rating/branch/master/graph/badge.svg)](https://codecov.io/gh/adisreyaj/angular-star-rating)
+
 Simple Rating Component for your next Angular Project. Very simple to setup and use and comes with a lot of customizations.
 
 ![User Ratings Card](https://raw.githubusercontent.com/adisreyaj/angular-star-rating/master/src/assets/rating.png)
